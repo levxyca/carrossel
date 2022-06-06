@@ -7,4 +7,6 @@ Um carrossel feito com JavaScript.
 
 ## Processo de Desenvolvimento
 
+- Criação da parte visual do projeto com HTML/CSS
+
 ## Glossário
