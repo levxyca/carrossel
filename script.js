@@ -41,13 +41,26 @@ const nome = document.querySelector(".card__name");
 const occupations = document.querySelector(".card__position");
 const review = document.querySelector(".card__description");
 const btns = document.querySelectorAll(".btn");
-const length = reviews.length;
-let i;
 
+const length = reviews.length;
+let i = 0;
+
+// load initial item
+
+/*
 nome.textContent = reviews[0].nome;
-occupations.textContent = reviews[0].são;
+occupations.textContent = reviews[0].profissão;
 review.textContent = reviews[0].review;
 img.setAttribute("src", reviews[0].img);
+*/
+
+window.addEventListener("DOMContentLoaded", function () {
+  const item = reviews[i];
+  img.src = item.img;
+  nome.textContent = item.nome;
+  occupations.textContent = item.profissão;
+  review.textContent = item.review;
+});
 
 btns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
