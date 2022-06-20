@@ -45,7 +45,7 @@ const length = reviews.length;
 let i;
 
 nome.textContent = reviews[0].nome;
-occupations.textContent = reviews[0].são;
+occupations.textContent = reviews[0].profissão;
 review.textContent = reviews[0].review;
 img.setAttribute("src", reviews[0].img);
 
